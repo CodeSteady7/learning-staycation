@@ -3,7 +3,8 @@ var mongoose = require('mongoose');
 
 // Connect to MongoDB via Mongoose
 seeder.connect(
-	'mongodb://127.0.0.1:27017/db_staycation',
+	// 'mongodb://127.0.0.1:27017/db_staycation',
+	'mongodb+srv://chairul:Lhokseumawe07@cluster0.67wib.mongodb.net/db_staycation?retryWrites=true&w=majority', //menkoneksikan mongoAtlas ke project
 	{
 		useNewUrlParser: true,
 		useCreateIndex: true,

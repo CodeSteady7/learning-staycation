@@ -11,7 +11,8 @@ const session = require('express-session');
 const flash = require('connect-flash');
 // Import Mongoose
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://127.0.0.1:27017/db_staycation', {
+// mongoose.connect('mongodb://127.0.0.1:27017/db_staycation', {//menkoneksikan mongoAtlas ke project
+mongoose.connect('mongodb+srv://chairul:Lhokseumawe07@cluster0.67wib.mongodb.net/db_staycation?retryWrites=true&w=majority', {
 	// mongoose.connect('mongodb://localhost:27017/BWA_MERN', {
 	useNewUrlParser: true,
 	useUnifiedTopology: true,
